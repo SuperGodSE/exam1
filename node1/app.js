@@ -2,7 +2,7 @@ var express = require('express');
 app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello World! this is the first edit\n');
+  res.send('Hello World! this is after adding health and ready probes\n');
 });
 
 app.get('/ready1'. function(req, res){

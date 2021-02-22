@@ -5,12 +5,12 @@ app.get('/', function (req, res) {
   res.send('Hello World! this is after adding health and ready probes\n');
 });
 
-app.get('/ready1', function(req, res) {
+app.get('/ready', function(req, res) {
   res.send('this is a readiness probe - fakkkkkkkkk you\n');
 });
 
 
-app.get('/healthy1', function(req, res) {
+app.get('/healthz', function(req, res) {
   res.send('this is a healthy probe - I am healthy hahahahahahahahahaha \n');
 });
 

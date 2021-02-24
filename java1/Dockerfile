@@ -6,7 +6,7 @@ USER root
 
 RUN echo "hello this is my app" && \
     mkdir -p /myapp && \
-    cp *.jar /myapp
+    cp ./*.jar /myapp
 
 WORKDIR /myapp
 

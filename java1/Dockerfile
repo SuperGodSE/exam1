@@ -2,7 +2,6 @@ From registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift
 
 EXPOSE 9000
 
-USER 1001
 
 RUN echo "hello this is my app" && \
     mkdir /myapp && \
@@ -11,4 +10,5 @@ RUN echo "hello this is my app" && \
 RUN chgrp -R 0 /myapp && \
     chmod -R g=u /myapp
 
+USER 1001
 CMD java -jar /myapp/*.jar 

@@ -1,4 +1,4 @@
-From registry.redhat.io/redhat-openjdk-18/openjdk18-openshift
+From registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift
 
 EXPOSE 9000
 

@@ -4,8 +4,9 @@ EXPOSE 9000
 
 
 RUN echo "hello this is my app" && \
-    mkdir /myapp && \
+    mkdir -p /myapp && \
     COPY *.jar /myapp
+WORKDIR /myapp
 
 RUN chgrp -R 0 /myapp && \
     chmod -R g=u /myapp

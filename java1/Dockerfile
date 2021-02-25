@@ -1,6 +1,6 @@
 From registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift
 
-EXPOSE 9000
+EXPOSE 9500
 
 USER root
 

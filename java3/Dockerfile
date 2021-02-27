@@ -1,6 +1,8 @@
 From registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift
 
-EXPOSE 9500
+ENV SERVER_PORT 9500
+
+EXPOSE $SERVER_PORT
 
 USER root
 

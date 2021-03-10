@@ -2,7 +2,7 @@ var express = require('express');
 app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello World - link apppppp ! this is after adding health and ready probes\n');
+  res.send('Hello World  test 1- link apppppp ! this is after adding health and ready probes\n');
 });
 
 app.get('/ready', function(req, res) {
